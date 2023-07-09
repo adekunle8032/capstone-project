@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+  <h2>Welcome, {{ user.username }}</h2>
+  <p>Email: {{ user.email }}</p>
+  <h3>Short URLs</h3>
+  <ul>
+    {% for short_url in user.short_urls %}
+      <li>
+        <a href="{{ url_for('app_routes.short_url_analytics', short_code=short_url.short_code) }}">Analytics</a> -
+        <a href="{{ short_url.original_url }}">{{ short_url.short_code }}</a>
+        <a href="{{ url_for('app_routes.generate_qrcode', short_code=short_url.short_code) }}">QR Code</a>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  
+  <h3>Create Short URL</h3>
+  <form method="post" action="{{ url_for('app_routes.create_short_url') }}">
+    <div>
+      <label for="original_url">Original URL:</label>
+      <input type="text" name="original_url" id="original_url" required>
+    </div>
+    <div>
+      <label for="custom_url">Custom URL (optional):</label>
+      <input type="text" name="custom_url" id="custom_url">
+    </div>
+    <div>
+      <button type="submit">Create Short URL</button>
+    </div>
+  </form>
+</body>
+</html>

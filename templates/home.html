@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Short URL Application</title>
+</head>
+<body>
+    <h1>Welcome to the Short URL Application</h1>
+    <p>Register or login to create and manage your short URLs.</p>
+    <p>
+        <a href="{{ url_for('app_routes.register') }}">Register</a> to get started,
+        or <a href="{{ url_for('app_routes.login') }}">Login</a> if you already have an account.
+    </p>
+</body>
+</html>

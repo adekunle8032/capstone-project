@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Analytics - Short URL Application</title>
+</head>
+<body>
+    <h1>Link Analytics</h1>
+    <h3>Short URL: {{ short_url.short_code }}</h3>
+    <p>Original URL: {{ short_url.original_url }}</p>
+    <h4>Visit Count: {{ visit_count }}</h4>
+    <h4>Recent Visits:</h4>
+    <ul>
+        {% for visit in recent_visits %}
+            <li>Visited at {{ visit.timestamp }} from IP Address {{ visit.ip_address }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
