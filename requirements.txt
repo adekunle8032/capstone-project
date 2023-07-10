@@ -31,5 +31,5 @@ qrcode==7.4.2
 rich==13.4.2
 SQLAlchemy==2.0.17
 typing_extensions==4.7.0
-Werkzeug==2.3.6
+Werkzeug==2.2.3
 wrapt==1.15.0
