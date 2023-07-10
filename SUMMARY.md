@@ -1,0 +1,15 @@
+# Table of contents
+
+* [🙂 capstone-project](README.md)
+* [env](env/README.md)
+  * [Lib](env/Lib/README.md)
+    * [site-packages](env/Lib/site-packages/README.md)
+      * [markdown\_it\_py-3.0.0.dist-info](env/Lib/site-packages/markdown\_it\_py-3.0.0.dist-info/README.md)
+        * [LICENSE](env/Lib/site-packages/markdown\_it\_py-3.0.0.dist-info/LICENSE.markdown-it)
+      * [greenlet](env/Lib/site-packages/greenlet/README.md)
+        * [platform](env/Lib/site-packages/greenlet/platform/README.md)
+          * [setup\_switch\_x64\_masm](env/Lib/site-packages/greenlet/platform/setup\_switch\_x64\_masm.cmd)
+      * [werkzeug](env/Lib/site-packages/werkzeug/README.md)
+        * [debug](env/Lib/site-packages/werkzeug/debug/README.md)
+          * [shared](env/Lib/site-packages/werkzeug/debug/shared/README.md)
+            * [ICON\_LICENSE](env/Lib/site-packages/werkzeug/debug/shared/ICON\_LICENSE.md)
